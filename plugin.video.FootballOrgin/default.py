@@ -181,7 +181,7 @@ We send through details of what we want to find and NaN Scrapers will search mul
 # If the item returned is a dictionary that's great we know we have a list to work with
     if koding.Data_Type(content) == 'dict':
         xbmc.log(repr(content),2)
-        playback = koding.Play_Video(video=content["url"], showbusy=True)
+        playback = koding.Play_Video(video=content["http://www.footballorgin.com/monday-night-football-mnf-special-skysports/"], showbusy=True)
  
 # It may be a plugin or direct url has been sent through, if so lets use the list_type variable
     elif not list_type.endswith('_dialog'):
